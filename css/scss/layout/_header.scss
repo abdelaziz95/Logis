@@ -1,0 +1,138 @@
+/* Start Navbar Section */
+.navbar-section{
+	.navbar{
+		background-color: transparent;
+		border: 0;
+		border-radius: 0;
+		padding: 10px;
+			// top: 0;
+			// transition: 0.6s;
+			// background:transparent;
+		.logo a{
+			color: #FFF;
+			font-size: 35px;
+			font-family: inherit;
+		}
+		.navbar-toggler{
+			border:0;
+			width: 70px;
+			height: 50px;
+			.menu-toggler{
+				max-width: 100%;
+				.fa-bars{
+					width: 50px;
+				}
+				
+			}
+		}
+		.navbar-nav{
+			.dropdown{
+				.dropdown-menu{
+					border-radius: 0;
+		    		border-top: 3px solid $orangeColor;
+		    		width: 200px;
+		    		overflow: auto;
+		    		background-color: #FFF;
+		    		.dropdown-item{
+		    			color: $paleBlack !important;
+		    			font-size: 15px;
+		    			padding-top: 0;
+		    			&:hover{
+		    				color:$orangeColor !important;
+		    			}
+		    		}
+				}
+			}
+			.nav-link{
+				color: #FFF;
+				font-size: 15px;
+				margin-left: 15px;
+				&:hover{
+					color:$orangeColor;
+				}
+			}
+		}
+		.navbar-nav .active a{
+			color: $orangeColor !important;
+		}		
+	}
+}
+.navbar-section.scrolled{
+	background-color: #FFF;
+	.navbar{
+		
+		border: 0;
+		border-radius: 0;
+		padding: 0;
+		.logo a{
+			color: #000;
+		}
+			.navbar-nav{
+			 .nav-link{
+				color: #000;
+					&:hover{
+					color:$orangeColor;
+					}
+				}
+				.navbar-nav .active a{
+				color: $orangeColor !important;
+			}
+			}
+			
+		}
+}
+/* End Navbar Section */
+/* Start Header Section */
+.header{
+	.word{
+		h1{
+		  font-size: 60px;
+		  font-weight: bold;
+		  color:#FFF;
+		  padding-top: 0;
+		  margin:10px 0;
+		  @media (max-width: 767px) {
+		  	font-size: 35px;
+		  	margin: 50px;
+		  }
+		}
+		p{
+		  color:#99B;
+		  font-size: 18px;
+		  line-height: 1.8;
+		  margin: 0px 0px 48px ;
+		  @media (max-width: 767px) {
+		  	font-size: 14px;
+		  }
+		}
+		.getStarted{
+		.btn-outline-primary{
+			text-decoration: none;
+			border-radius: 0;
+			padding:16px 48px;
+			border:2px solid $orangeColor;
+			background-color: $orangeColor;
+			width: 241px;
+		    height: 60px;
+			color: #FFF;
+			font-size: 20px;
+			font-weight: 400px;
+			letter-spacing: 0.1em;
+			&:hover{
+				background:transparent;
+				border:2px solid #FFF;
+			}
+		}
+	}
+	}
+	
+	position: relative;
+	.overlay{
+		@include overlay;
+		background-color: rgba(#000 , 0.4);
+	}
+	
+	background:url('../images/hero_bg_2.jpg') no-repeat;
+	@include prefixer(background-size , cover , webkit moz o ms);
+	//height: 100vh;
+}

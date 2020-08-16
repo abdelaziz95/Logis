@@ -1,0 +1,182 @@
+/* Start About Us */
+.about-us{
+	padding: 80px 0 20px;
+	overflow: hidden;
+	.about-left-side{
+		height: 80%;
+		.underline{
+		border-bottom: 5px solid $orangeColor;
+		line-height: 2.7;
+		width:180px;
+		margin: 0 0 24px 0;
+		h1{
+			color: $orangeColor;
+			font-weight: bold;
+			font-size: 35px;
+			line-height: 1.7;
+		}
+	}
+	.first-para{
+		margin: 0 0 24px 0;
+		line-height: 1.7;
+		
+	}
+	.second-para{
+		margin: 0 0 48px 0;
+		line-height: 1.7;
+		
+	}
+	.about-list {
+		.about-link{
+			line-height: 2.5;
+			.fa-check{
+			color: #8bc34a;
+			font-size: 18px;
+			font-weight: normal;
+			padding: 0px 10px;
+			
+		}
+		}
+	}
+	}
+	.about-right-side{
+		overflow: hidden;
+		.about-img{
+			max-width: 100%;
+			height: 60%;
+			border-radius: 5px;
+			margin-bottom: 0;
+	}
+	}
+
+}
+
+.howItWork{
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	
+	.overlay{
+		@include overlay;
+		background-color: rgba(#000 , 0.7);
+	}
+	background: url('../images/hero_bg_4.jpg') no-repeat;
+	@include prefixer(background-size , cover , webkit moz);
+	background-attachment: fixed;
+	@media  (max-width:991px){
+		height: 170vh;
+	}
+	@media  (max-width:767px){
+		height: 200vh;
+	}
+	.howFirst-heading{
+		.howPartHeading{
+			color: $orangeColor;
+			text-decoration: underline;
+			font-size: 40px;
+			font-weight: bold;
+			margin: 50px 0;
+		}	
+	}
+		
+	.number{
+		background-color: $orangeColor;
+		width:50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 3px solid #FFF;
+		margin: 0 0 30px;
+		h5{
+			color: #FFF;
+			margin-bottom: 15px;
+			font-size: 20px;
+			line-height: 2;
+		}
+	}
+	.payment{
+		font-size: 15px;
+		font-weight: bold;
+		color:#FFF;
+		margin: 0 0 30px;
+
+	}
+	.howParagraph{
+		line-height: 1.7;
+		color: #fff;
+		margin: 0 0 30px;
+		@media  (max-width:767px) and (max-width: 991px){
+			line-height: 1.5;
+		}
+	}
+	ul{
+		li{
+			color: #FFF;
+			line-height: 2.5;
+			@media  (max-width:767px) and (max-width: 991px){
+				line-height: 1.7;
+			}
+		}
+		.fa-check{
+			color: #8bc34a;
+			font-size: 18px;
+			font-weight: normal;
+			padding: 0px 10px;
+		}
+	}
+		
+}
+.our-team{
+	margin: 80px 0;
+	.ourTeamPart{
+		padding: 0 0 20px;
+		margin: 0 0 20px;
+		.ourTeamHeading{
+			color: $orangeColor;
+			font-weight: bold;
+			font-size: 30px;
+			border-bottom: 4px solid $orangeColor;
+			line-height: 1.7;
+			padding: 0 0 20px;
+		}
+	}
+.teamPersonDiv{
+	@media (max-width: 991px){
+		margin-top: 70px;
+	}
+	.teamPersonImg{
+		width:75%;
+		height: 45%;
+		border-radius: 50%;
+		@media (max-width: 767px){
+			width: 50%
+		}
+	}
+	h3{
+		color: $grayColor;
+		font-size: 18px;
+		margin: 40px 0 10px 0;
+	}
+	.first-para{
+		font-size: 12px;
+		color:#CCC;
+		margin-bottom: 20px;
+	}
+	.second-para{
+		line-height: 1.7;
+		margin-bottom: 20px;
+	}
+	.list-inline-item{
+		width: 35px;
+		height: 35px;
+		background-color: #777;
+		border-radius: 50%;
+		.fa{
+			font-size: 18px;
+			line-height: 2.1;
+			color: #FFF;
+		}
+	}
+	}
+	
+}
+/* End About Us */

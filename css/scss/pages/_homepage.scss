@@ -1,0 +1,204 @@
+/* Start Industries */
+.industries-section{
+	margin:50px 0;
+	.heading{
+		.industries{
+		color:$orangeColor;
+		font-size: $bigFont;
+		font-weight: $boldFont;
+		padding:10px 0;
+	}
+	p{
+		color:#ccc;
+	}
+	p:after{
+		content: '';
+		position: relative;
+		max-width: 25%;
+		display: block;
+		margin:0 auto;
+		padding-top: 20px;
+		border-bottom: 5px solid $orangeColor;
+	}
+	}
+
+	.unit-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: block; }
+  .unit-1:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: -moz-linear-gradient(top, transparent 12%, transparent 29%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, transparent 12%, transparent 29%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+    background: -o-linear-gradient(top, transparent 12%, transparent 29%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 12%, transparent 29%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); 
+}
+  
+  .unit-1 img, .unit-1 .unit-1-text {
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out; }
+  .unit-1 .unit-1-text {
+    z-index: 2;
+    position: absolute;
+    bottom: -90px;
+    color: #fff;
+    display: block;
+    width: 100%; }
+    .unit-1 .unit-1-text .unit-1-heading {
+      font-size: 1.5rem;
+      position: relative; }
+    
+  .unit-1:hover .unit-1-text {
+    bottom: 30px; }
+  .unit-1:hover img {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+}
+
+/* End Industries */
+
+/* Start Testmonials */
+.testmonials{
+	.testmonial-headings{
+		.heading{
+			font-size: $bigFont;
+			font-weight: $boldFont;
+			color: $orangeColor;
+			padding:10px 0;
+			@media (max-width: 767px){
+				font-size: 30px;
+			}
+		}
+		.heading:after{
+			content: "";
+			margin:0 auto;
+			max-width: 25%;
+			position:relative;
+			border-bottom: 5px solid $orangeColor;
+			padding-top: 20px;
+			display: block;
+		}
+	}
+	.testmonial-slider{
+		.carousel-inner{
+			max-width: 100%;
+			.carousel-item{
+				max-width: 85%;
+				margin-left: 100px;
+				transition: transform .2s ease;
+				@media (max-width: 767px){
+					max-width: 70%;
+				}
+				img{
+					width:10%;
+					height: 10%;
+					border-radius: 50%;
+					@media (max-width: 767px){
+						margin-top: 20px;
+						width:25%;
+					    height: 25%;
+					    border-radius: 50%;
+					}
+				}
+				p{
+					font-style: italic;
+					font-size: 30px;
+					line-height: 2.5;
+					@media (max-width: 767px)
+					{
+						font-size: 20px;
+						line-height: 2;
+					}
+				}
+			}
+		}
+		.carousel-control-prev,
+		.carousel-control-next{
+			background-color: black;
+			width:4%;
+			height: 10%;
+			border-radius: 50%;
+			margin: auto 0 ;
+		}
+	}
+}
+/* End Testmonials */
+.divider{
+	border:1px solid #EEE;
+}
+/* start Blog */
+.our-blog{
+	.title-section{
+		margin:40px 0;
+		.heading{
+		font-size: $bigFont;
+		font-weight: bold;
+		color:$orangeColor;
+		}
+		p{
+			font-size: 15px;
+			color: #ccc;
+		}
+		p:after{
+			content:"";
+			display: block;
+			padding-top: 15px;
+			max-width: 20%;
+			border-bottom: 5px solid $orangeColor;
+			margin:0 auto;
+		}
+	}
+	.lower-section{
+		img{
+			max-width: 100%;
+		}
+		.under-img{
+			h3{
+			color: $orangeColor;
+			margin:15px 0;
+			font-size: 20px;
+			}
+			h6{
+				color: #ccc;
+				font-size: 14px;
+				a{
+					color: $orangeColor;
+				}
+			}
+			p{
+				color:$grayColor;
+			}
+		}
+	}
+	.viewBlog-button{
+		.btn-outline-primary{
+			text-decoration: none;
+			border-radius: 0;
+			padding:16px 48px;
+			border:2px solid $orangeColor;
+			background-color: $orangeColor;
+			width: 350px;
+		    height: 60px;
+			color: #FFF;
+			font-size: 20px;
+			font-weight: 400px;
+			letter-spacing: 0.1em;
+			margin: 80px 0;
+			&:hover{
+			background-color: #f23a2e;
+			}
+		}
+	}
+}
+/* end blog */

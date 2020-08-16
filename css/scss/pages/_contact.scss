@@ -1,0 +1,89 @@
+/* Start Contact */
+.contact-us{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #f7f7f7;
+	padding:100px 0 ;
+	.contact-heading-section{
+		margin-bottom:50px;
+		h1{
+			color: $orangeColor;
+			font-size: $bigFont;
+			font-weight: $boldFont;
+			
+		}
+		p{
+			font-size: 15px;
+			color:#ccc;
+		}
+		p:after{
+			content:"";
+			display: block;
+			border-bottom: 5px solid $orangeColor;
+			padding-top: 20px;
+			margin:0 auto;
+			max-width: 20%;
+		}
+	}
+	.contact-form{
+		background-color: #FFF;
+		padding:45px;
+		@media (max-width: 767px){
+			margin-bottom: 20px;
+		}
+		.form-group{
+			padding:0 15px;
+			.form-control{
+			border-radius: 0;
+			padding:6px 12px;
+			}
+			.contact-button{
+				background-color: $orangeColor !important;
+				width:200px;
+				color: #FFF;
+				font-size: 19px;
+				padding:8px 24px;
+				border-radius: 0;
+				border:2px solid $orangeColor;
+				letter-spacing: 1.3;
+
+			}
+		}
+	}
+	.our-info,
+	.more-info{
+		background-color: #FFF;
+		padding:25px 35px;
+		margin-bottom:20px;
+		h5{
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		p{
+			color: $orangeColor;
+			margin-bottom: 30px;
+			a{
+				text-decoration: none;
+				color: $orangeColor;
+			}
+		}
+		p:first-of-type{
+			color:#000;
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+		.contact-button{
+			background-color: $orangeColor !important;
+			width:100px;
+			color: #FFF;
+			font-size: 19px;
+			padding:8px 24px;
+			border-radius: 0;
+			border:2px solid $orangeColor;
+			letter-spacing: 1.3;
+		}
+
+	}
+}
+/* End Contact */

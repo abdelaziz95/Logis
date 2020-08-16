@@ -1,0 +1,58 @@
+$(function () {
+  "use strict";
+
+  var winH = $(window).height(),
+    wordHi = $(".word").height();
+
+  $(".header").height(winH);
+  $(".word").css("paddingTop", (winH - wordHi) / 2);
+
+  $(".navbar-nav .nav-item .nav-link").on("click", function () {
+    $(".navbar ul li a").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(window).scroll(function () {
+    $(".navbar-section").toggleClass("scrolled", $(this).scrollTop() > 100);
+    $(".block").each(function () {
+      if ($(window).scrollTop() > $(this).offset().top - 100) {
+        var blockID = $(this).attr("id");
+        $(".navbar a").removeClass("active");
+        $('ul li a[data-scroll="' + blockID + '"]').addClass("active");
+      }
+    });
+  });
+
+  $("ul li a").click(function (e) {
+    e.preventDefault();
+    $("html , body").animate(
+      {
+        scrollTop: $("#" + $(this).data("scroll")).offset().top - 80,
+      },
+      1500
+    );
+  });
+
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      768: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 4,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
+
+  $(".carousel").carousel({ interval: 2500 });
+});

@@ -1,0 +1,68 @@
+.services{
+	background-color: #f7f7f7;
+	.our-services{
+		//border-bottom: 3px solid $orangeColor;
+		margin:70px 0;
+
+		
+		.heading{
+			font-size: $bigFont;
+			line-height: 1.3;
+			color: $orangeColor;
+			font-weight: $boldFont;
+		}
+        
+		.paragraph1{
+			color: #777;
+			font-family: "icomoon";
+		}
+		.paragraph1:after {
+		    content: ""; /* This is necessary for the pseudo element to work. */ 
+		    display: block; /* This will put the pseudo element on its own line. */
+		    margin: 0 auto; /* This will center the border. */
+		    width: 25%; /* Change this to whatever width you want. */
+		    padding-top: 20px; /* This creates some space between the element and the border. */
+		    border-bottom: 4px solid $orangeColor; /* This creates the border. Replace black with whatever color you want. */
+		}
+	}
+	.section{
+		margin-bottom: 40px;
+		padding: 0 5px;
+	
+		.description{
+			.fa{
+					width:50px;
+					font-size: 55px;
+				    color:$orangeColor;
+				    display: inline-block;
+				    margin: 0px 45px 0 5px;
+				}
+			.fa-ship,.fa-glob{font-size:40px;}
+			.fa-truck,
+			.fa-archive,.fa-table{
+				font-size: 45px;
+			}
+			.heading{
+				color: #000;
+				font-size: 20px;
+				line-height: 3;
+
+			}
+			.paragraph{
+				margin-left: 100px;
+				line-height: 1.7;
+				font-family: "Arial ", sans-serif;
+			}
+			a{
+				text-decoration: none;
+				color: $orangeColor;
+				margin-left: 100px;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+
+
+
