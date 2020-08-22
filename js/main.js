@@ -55,4 +55,60 @@ $(function () {
   });
 
   $(".carousel").carousel({ interval: 2500 });
+  window.sr = ScrollReveal();
+
+  sr.reveal('.navbar',{
+    duration: 2000,
+    origin: 'bottom',
+  })
+
+  sr.reveal('.header-first-div',{
+    duration: 2000,
+    origin: 'top',
+    distance:'300px'
+    
+  })
+
+  sr.reveal('.about-left-side',{
+      duration: 2000,
+      origin: 'bottom',
+      distance:'300px',
+      delay: 200,
+      viewFactor: 0.2
+  })
+
+  sr.reveal('.about-right-side',{
+      duration: 2000,
+      origin: 'bottom',
+      distance:'300px',
+      viewFactor : 0.2
+  })
+
+  sr.reveal('.one',{
+      duration: 2000,
+      origin: 'left',
+      distance:'300px',
+      viewFactor : 0.2
+  })
+  sr.reveal('.two',{
+      duration: 2000,
+      origin: 'top',
+      distance:'600px',
+      viewFactor: 0.2
+  })
+  sr.reveal('.three',{
+      duration: 2000,
+      origin: 'right',
+      distance:'900px',
+      viewFactor: 0.2,
+      
+  })
+  sr.reveal('.s-row',{
+      duration: 2000,
+      origin: 'bottom',
+      distance:'300px',
+      viewFactor: 0.2
+      
+  })
+
 });
